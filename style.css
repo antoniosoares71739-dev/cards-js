@@ -1,0 +1,32 @@
+.video-background {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.card {
+    transition: transform 0.3s;
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+footer a:hover {
+    color: #a3d8f4 !important;
+}
+
+.navbar-nav .nav-link {
+    color: #1a3c6d !important;
+    transition: color 0.3s;
+}
+.navbar-nav .nav-link:hover {
+    color: #a3d8f4 !important;
+}
