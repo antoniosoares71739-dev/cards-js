@@ -1,0 +1,331 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.logo {
+    margin-right: 20px;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    margin: 0px;
+    padding: 0;
+}
+
+.nav-item {
+    margin: 0 5px;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+    background-color: #058db6;
+    padding: 10px 20px;
+    border-radius: 18px;
+    font-size: 14px;
+}
+
+.nav-link:hover {
+    background-color: #d36b04;
+    transition: 0.5s;
+}
+
+/* ===== SEÇÃO HERO ===== */
+.hero-section {
+    background: linear-gradient(135deg, #059669 0%, #047857 50%, #0f766e 100%);
+    color: white;
+    padding: 5rem 0;
+}
+
+.container-grande {
+    max-width: 72rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.centralizado {
+    margin: 0 auto;
+}
+
+.texto-centralizado {
+    text-align: center;
+}
+
+.etiqueta {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+.etiqueta.verde-claro {
+    background-color: rgba(74, 222, 128, 0.2);
+    color: #0dbd4b;
+    border: 1px solid rgba(110, 231, 183, 0.3);
+}
+
+.espaco-direita {
+    margin-right: 0.5rem;
+}
+
+.titulo-grande {
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 1.25;
+    margin-bottom: 1.5rem;
+}
+
+.titulo-destaque {
+    color: white;
+}
+
+.texto-gradiente {
+    background: linear-gradient(to right, #86efac, #a7f3d0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.texto-medio {
+    font-size: 1.25rem;
+    line-height: 1.625;
+}
+
+.texto-verde-claro {
+    color: #dcfce7;
+}
+
+/* ===== CONTAINER DOS CARDS ===== */
+.container {
+    max-width: 72rem;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+@media (min-width: 1024px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ===== CARDS (MESMO ESTILO DOS 4 CARDS ANTIGOS) ===== */
+.card {
+    border-radius: 0.5rem;
+    overflow: hidden;
+    transition: all 0.3s;
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(4px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.card-header {
+    padding: 1.5rem 1.5rem 1rem 1.5rem;
+}
+
+.linha-superior {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+}
+
+/* Ícones dos cards */
+#card-1 .card-icone {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    background: linear-gradient(to bottom right, #000000, #00ffea);
+}
+
+#card-2 .card-icone {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    background: linear-gradient(to bottom right, #3b82f6, #06b6d4);
+}
+
+/* Faixa colorida no topo - cores diferentes para cada card */
+#card-1 .card-topo {
+    height: 0.5rem;
+    background: linear-gradient(to right, #000000, #00ffea);
+}
+
+#card-2 .card-topo {
+    height: 0.5rem;
+    background: linear-gradient(to right, #3b82f6, #06b6d4);
+}
+/* ===== NOVOS CARDS ADICIONADOS ===== */
+
+/* Card 3 - Roxo */
+#card-3 .card-topo {
+    height: 0.5rem;
+    background: linear-gradient(to right, #3a1397, #b30aeb);
+}
+
+#card-3 .card-icone {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    background: linear-gradient(to bottom right, #3a1397, #b30aeb);
+}
+
+/* Card 4 - Laranja */
+#card-4 .card-topo {
+    height: 0.5rem;
+    background: linear-gradient(to right, #f97316, #eab308);
+}
+
+#card-4 .card-icone {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    background: linear-gradient(to bottom right, #f97316, #eab308);
+}
+
+#card-5 .card-topo {
+    height: 0.5rem;
+    background: linear-gradient(to right,#1a6503, #08f720);
+}
+
+#card-5 .card-icone {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    background: linear-gradient(to bottom right, #1a6503, #08f720);
+}
+
+#card-6 .card-topo {
+    height: 0.5rem;
+    background: linear-gradient(to right, #1244f7, #01dee2);
+}
+
+#card-6 .card-icone {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    background: linear-gradient(to bottom right,  #1244f7, #01dee2);
+}
+#card-7 .card-topo {
+    height: 0.5rem;
+    background: linear-gradient(to right, #7c0909, #ea0808);
+}
+#card-7 .card-icone {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    background: linear-gradient(to bottom right,  #7c0909, #ea0808);
+}
+#card-8 .card-topo {
+    height: 0.5rem;
+    background: linear-gradient(to right, #c816f9, #189bed);
+}
+#card-8 .card-icone {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    background: linear-gradient(to bottom right, #c816f9, #189bed);
+}
+
+
+
+.card:hover .card-icone {
+    transform: scale(1.1);
+}
+
+.texto-branco {
+    color: white;
+}
+
+/* Badge dos cards */
+.card-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    background-color: #dcfce7;
+    color: #15803d;
+    border: 1px solid #bbf7d0;
+}
+
+/* Título do card */
+.card-titulo {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    color: #111827;
+    transition: color 0.3s ease;
+}
+
+.card:hover .card-titulo {
+    color: #15803d;
+}
+
+/* Conteúdo do card */
+.card-content {
+    padding: 1.5rem;
+    padding-top: 0;
+}
+
+.texto-cinza {
+    color: #374151;
+    line-height: 1.625;
+}
+
